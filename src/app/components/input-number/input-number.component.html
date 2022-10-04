@@ -1,0 +1,14 @@
+<span class="p-float-label mt-3">
+  <p-inputNumber
+    *ngIf="mode"
+    [formControl]="formControl"
+    mode="decimal"
+    [minFractionDigits]="2"
+    [maxFractionDigits]="2"
+  >
+  </p-inputNumber>
+  <p-inputNumber *ngIf="!mode" [formControl]="formControl"> </p-inputNumber>
+  <label>
+    {{ label }}
+  </label>
+</span>
